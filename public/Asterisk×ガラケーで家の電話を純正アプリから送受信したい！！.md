@@ -3,7 +3,7 @@ title: Asterisk×ガラケーで家の電話を純正アプリから送受信し
 tags:
   - asterisk
 private: false
-updated_at: '2025-12-28T06:14:11+09:00'
+updated_at: '2025-12-28T06:44:07+09:00'
 id: 8231c91b50061f75d62e
 organization_url_name: null
 slide: false
@@ -171,6 +171,23 @@ au GRATINA KYF42という端末ですが、これは京セラが開発した端�
 これを使って純正電話アプリにSIPサーバの設定を突っ込めばTailscale経由でAsteriskの電話を送受信できるんじゃないか？という目論見です。
 
 
-![QuickShortcutMakerの設定画像](https://raw.githubusercontent.com/IT-F-30/qiita-content/main/image/QuickShortcutMaker.jpeg)
-インクリメンタル検索から「通話アカウント」の設定を開きます。お気に入り設定しとくと便利です
+![QuickShortcutMakerの設定画像](https://raw.githubusercontent.com/IT-F-30/qiita-content/main/image/QuickShortcutMaker.png)
+インクリメンタル検索から「通話アカウント」の設定を開きます。お気に入り設定しとくと便利です。
 
+それを開くとAndroidっぽいメニューが開けると思います。
+![携帯電話の設定画像](https://raw.githubusercontent.com/IT-F-30/qiita-content/main/image/Phone-settings.png)
+
+これのSIPアカウントと着信を受けるという設定を変更する必要があります。
+
+![SIPの設定画像](https://raw.githubusercontent.com/IT-F-30/qiita-content/main/image/SIP-settings.png)
+SIPアカウントの設定を開くとこの画面が出てきます右上にあるプラスボタンを押すと追加できます
+
+![SIPアカウントの設定画像](https://raw.githubusercontent.com/IT-F-30/qiita-content/main/image/SIP-Account-settings.png)
+この画面から
+- ユーザ名(Astersikのpjsip.confに書かれたもの)
+- パスワード(Astersikのpjsip.confに書かれたもの)
+- サーバー(tailscaleのIPアドレス)
+
+を記述すればOKです。
+
+### これで完璧！！
