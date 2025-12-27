@@ -3,7 +3,7 @@ title: Asterisk×ガラケーで家電話を純正アプリから送受信した
 tags:
   - asterisk
 private: false
-updated_at: '2025-12-28T04:29:50+09:00'
+updated_at: '2025-12-28T05:18:08+09:00'
 id: 8231c91b50061f75d62e
 organization_url_name: null
 slide: false
