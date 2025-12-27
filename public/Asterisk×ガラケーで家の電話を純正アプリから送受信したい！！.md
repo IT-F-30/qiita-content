@@ -56,6 +56,13 @@ ignorePublish: false
 ### pjsip.conf
 ```
 ; -------------------------------------------------------------
+; --- グローバル設定 ---
+; -------------------------------------------------------------
+[simpletrans]
+type=transport
+protocol=udp
+bind=0.0.0.0:5060
+; -------------------------------------------------------------
 ; --- HGW (ひかり電話) トランク設定 ---
 ; -------------------------------------------------------------
 [hgw-registration]
@@ -94,6 +101,29 @@ contact=sip:192.168.0.1:5060
 type=identify
 endpoint=hgw
 match=192.168.0.1
+
+; -------------------------------------------------------------
+; --- 内線電話機 6013 の設定 ---
+; -------------------------------------------------------------
+[6013]
+type=endpoint
+context=from-internal
+disallow=all
+allow=ulaw
+transport=simpletrans
+auth=6013
+aors=6013
+direct_media=no
+
+[6013]
+type=auth
+auth_type=userpass
+password=6013
+username=6013
+
+[6013]
+type=aor
+max_contacts=10
 ```
 HGW(RX-500KI)のIPアドレスは`192.168.0.1`なのでここをご自分のHGWのIPアドレスに変更してください
 ### これでほぼ設定は完了です、もうAstersikに家の電話の外線から着信があればAsteriskに入ってきているはずです
