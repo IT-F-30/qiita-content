@@ -40,8 +40,8 @@ ignorePublish: false
 - 端末属性(任意)
 - MACアドレス(AsteriskサーバのMACアドレス)
 - ダイジェスト認証(行う)
-- ユーザID(Astersikのpjsip.confに書かれたもの)
-- パスワード(Astersikのpjsip.confに書かれたもの)
+- ユーザID(Asteriskのpjsip.confに書かれたもの)
+- パスワード(Asteriskのpjsip.confに書かれたもの)
 
 を書いて**設定**をクリックすればOKです。
 
@@ -125,8 +125,8 @@ username=6013
 type=aor
 max_contacts=10
 ```
-HGW(RX-500KI)のIPアドレスは`192.168.0.1`なのでここをご自分のHGWのIPアドレスに変更してください
-### これでほぼ設定は完了です、もうAstersikに家の電話の外線から着信があればAsteriskに入ってきているはずです
+HGW(RX-600KI)のIPアドレスは`192.168.0.1`なのでここをご自分のHGWのIPアドレスに変更してください
+### これでほぼ設定は完了です、もうAsteriskに家の電話の外線から着信があればAsteriskに入ってきているはずです
 
 ## メインストーリー:スマホで家の電話の送受信を行う
 ### まずは家の電話との接続方法
@@ -180,13 +180,13 @@ Zoiperなどのクライアントアプリを常時起動またはバックグ�
 ### 端末選定をしよう
 
 ガラケーでかつtailscaleを使うとなるともはや無理では？みたいなと思いますが実はあるんです。
-### Androidを搭載さしたガラホがある
+### Androidを搭載したガラホがある
 
 #### 実はAndroidを搭載したガラホという私たちみたいなニッチな層にブッ刺さりそうな端末があるんです
 
 au GRATINA KYF42という端末ですが、これは京セラが開発した端末で4G回線に対応して端子はなんとUSB-Cなんです。素晴らしい
 
-これで端末問題はクリアしました、
+これで端末問題はクリアしました。
 
 ### ガラホ改造の具体的な手順
 
@@ -214,8 +214,8 @@ SIPアカウントの設定を開くとこの画面が出てきます右上に�
 
 ![SIPアカウントの設定画像](https://raw.githubusercontent.com/IT-F-30/qiita-content/main/image/SIP-Account-settings.png)
 この画面から
-- ユーザ名(Astersikのpjsip.confに書かれたもの)
-- パスワード(Astersikのpjsip.confに書かれたもの)
+- ユーザ名(Asteriskのpjsip.confに書かれたもの)
+- パスワード(Asteriskのpjsip.confに書かれたもの)
 - サーバー(tailscaleのIPアドレス)
 
 を記述すればOKです。
