@@ -1,5 +1,5 @@
 ---
-title: Asterisk×ガラケーで家電話を純正アプリから送受信したい！！
+title: Asterisk×ガラケーで家の電話を純正アプリから送受信したい！！
 tags:
   - asterisk
 private: false
@@ -9,7 +9,7 @@ organization_url_name: null
 slide: false
 ignorePublish: false
 ---
-# Asterisk×ガラケーで家電話を純正アプリから送受信したい！！
+# Asterisk×ガラケーで家の電話を純正アプリから送受信したい！！
 ## 皆さんは家電話を何で受けていますか？
 
 一般のというかとりあえず家に家電があるという方は普通のPanasonicやPioneerのものがとりあえずあるという形だと思います。
