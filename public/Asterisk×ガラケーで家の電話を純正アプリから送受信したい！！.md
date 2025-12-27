@@ -110,7 +110,7 @@ TailscaleとはP2Pを基本としたVPNで、通信を許可している機器�
 Zoiperなどのクライアントアプリを常時起動またはバックグラウンドで起動させないと着信を受けられません
 これは**携帯電話**としては致命的であり改善させる必要があります。
 
-## エンドコンテンツ:ガラケーで家の電話の送受信を行う
+## エンドコンテンツ:他端末で家の電話の送受信を行う
 前述からスマホでの送受信は行えたけれどバッテリー持ちがネックとなってしまったという結論になってしまったと思います。
 ### では別端末にまとめてしまえば良いのではないでしょうか？
 ![黒電話(バブリースタイル)](https://raw.githubusercontent.com/IT-F-30/qiita-content/main/image/Black-Phone.jpeg)
@@ -167,3 +167,10 @@ au GRATINA KYF42という端末ですが、これは京セラが開発した端�
 この二つのアプリをapk経由でUSBから注入します。
 
 #### QuickShortcutMakerの設定
+指定したアプリの裏設定を簡単に表示させられる便利アプリです。
+これを使って純正電話アプリにSIPサーバの設定を突っ込めばTailscale経由でAsteriskの電話を送受信できるんじゃないか？という目論見です。
+
+
+![QuickShortcutMakerの設定画像](https://raw.githubusercontent.com/IT-F-30/qiita-content/main/image/QuickShortcutMaker.jpeg)
+インクリメンタル検索から「通話アカウント」の設定を開きます。お気に入り設定しとくと便利です
+
